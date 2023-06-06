@@ -25,7 +25,7 @@ function Header({ emailValue, refreshTime }: HeaderProps) {
             <FaCopy />
           </button>
         </div>
-        <div className="flex flex-wrap items-center justify-center mx-auto">
+        <div className="flex flex-wrap items-center justify-center mx-auto p-4">
           <p className="mx-auto p-4 text-sm font-light">
             auto refresh in
             {' '}
