@@ -1,8 +1,18 @@
+import { useMutation } from '@apollo/client';
+import { INTRODUCE_SESSION } from './services/querys.ts';
+
 function App() {
+  const [createSession, { data, loading, error }] = useMutation(INTRODUCE_SESSION);
+
+  if (data) console.log(data);
+
   return (
-    <h1 className="text-3xl bg-blue-300 font-bold underline">
-      DropMail Challenge
-    </h1>
+    <button
+      type="button"
+      onClick={() => createSession()}
+    >
+      create session
+    </button>
   );
 }
 
