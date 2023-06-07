@@ -47,6 +47,10 @@ module.exports = {
         extensions: ['.ts', '.tsx'],
         moduleDirectory: ['src', 'node_modules'],
       },
+      alias: {
+        map: [['@', './src']],
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+      },
     },
   },
 };

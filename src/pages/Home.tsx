@@ -11,7 +11,7 @@ interface UserInfo {
 function Home() {
   const [userInfo, setUserInfo] = useState<UserInfo>();
   return (
-    <div className="h-screen flex flex-col">
+    <div className="h-screen flex flex-col py-4">
       <Header emailValue="user@user.com" refreshTime={15} />
       <Inbox mails={mails} />
     </div>

@@ -13,3 +13,14 @@ export interface MailProps {
   fromAddr: string,
   text: string,
 }
+
+export interface MailHeaderProps {
+  headerSubject: string,
+  fromAddr: string,
+  text: string,
+  handleClick: React.Dispatch<React.SetStateAction<MailProps | undefined>>,
+}
+
+export interface InboxProps {
+  mails: Mail[],
+}
