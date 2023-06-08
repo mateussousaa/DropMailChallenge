@@ -7,8 +7,9 @@ import {
 } from '@/utils/handleLocalStorage';
 import { createNotification } from '@/utils/handleNotifications';
 import { ToastContainer } from 'react-toastify';
-import Header from '../components/Header';
-import Inbox from '../components/Inbox';
+import Header from '../../components/Header';
+import Inbox from '../../components/Inbox';
+import Spinner from './Spinner';
 
 function Home() {
   const [mails, setMails] = useState<Mail[]>([]);
@@ -83,7 +84,7 @@ function Home() {
 
   if (error) return <h1>{error.message}</h1>;
 
-  if (!sessionMails) return <h1>Loading Mails</h1>;
+  if (!sessionMails) return <Spinner />;
 
   return (
     <div className="h-screen flex flex-col py-4">
