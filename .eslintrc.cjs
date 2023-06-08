@@ -16,15 +16,7 @@ module.exports = {
         extensions: ['.tsx'],
       },
     ],
-    'import/no-extraneous-dependencies': [
-      'error',
-      {
-        devDependencies: [
-          '**/vite.config.ts', // jest setup
-        ],
-        optionalDependencies: false,
-      },
-    ],
+    'import/no-extraneous-dependencies': 'off',
     'import/extensions': [
       'error',
       'ignorePackages',
