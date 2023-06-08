@@ -24,3 +24,22 @@ export interface MailHeaderProps {
 export interface InboxProps {
   mails: Mail[],
 }
+
+export interface SessionInfo {
+  email: string,
+  id: string,
+}
+
+interface Address {
+  address: string,
+  __typename: string,
+ }
+
+export interface ResponseCreateSession {
+  introduceSession: {
+    id: string,
+    addresses: Address[],
+    expiresAt: string,
+    __typename: string
+  }
+}

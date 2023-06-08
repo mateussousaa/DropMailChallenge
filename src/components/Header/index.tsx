@@ -4,9 +4,10 @@ import { RiRefreshFill } from 'react-icons/ri';
 interface HeaderProps {
   emailValue: string,
   refreshTime: number,
+  handleRefreshButton: () => Promise<void>
 }
 
-function Header({ emailValue, refreshTime }: HeaderProps) {
+function Header({ emailValue = '', refreshTime, handleRefreshButton }: HeaderProps) {
   return (
     <div className="p-4 max-w-4xl mx-auto">
       <div className="flex flex-wrap items-center">
@@ -16,6 +17,7 @@ function Header({ emailValue, refreshTime }: HeaderProps) {
             type="text"
             className="w-full bg-slate-100 rounded-l px-4 py-2 focus:outline-none"
             value={emailValue}
+            readOnly
           />
           <button
             type="button"
@@ -33,6 +35,7 @@ function Header({ emailValue, refreshTime }: HeaderProps) {
           </p>
           <button
             type="button"
+            onClick={handleRefreshButton}
             className="ml-4 p-2 bg-slate-400 rounded text-white flex items-center gap-2 text-sm font-light"
           >
             <RiRefreshFill size="20" />
