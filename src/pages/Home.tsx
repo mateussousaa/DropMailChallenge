@@ -2,7 +2,11 @@ import { SessionInfo, ResponseCreateSession, Mail } from '@/interfaces';
 import { useLazyQuery, useMutation } from '@apollo/client';
 import { GET_EMAILS, INTRODUCE_SESSION } from '@/services/querys';
 import { useEffect, useState } from 'react';
-import { getUserInfo, updateUserInfo } from '@/utils/getUserInfoLocalStorage';
+import {
+  getMailsLength, getUserInfo, setMailsLength, updateUserInfo,
+} from '@/utils/handleLocalStorage';
+import { createNotification } from '@/utils/handleNotifications';
+import { ToastContainer } from 'react-toastify';
 import Header from '../components/Header';
 import Inbox from '../components/Inbox';
 
@@ -10,7 +14,11 @@ function Home() {
   const [mails, setMails] = useState<Mail[]>([]);
   const [getMails, { data: sessionMails, error, refetch }] = useLazyQuery(GET_EMAILS, {
     onCompleted(response) {
+      if (response.session.mails.length > getMailsLength()) {
+        createNotification();
+      }
       setMails(response.session.mails);
+      setMailsLength(response.session.mails.length);
     },
   });
   const [timeToRefresh, setTimeToRefresh] = useState<number>(15);
@@ -79,6 +87,7 @@ function Home() {
 
   return (
     <div className="h-screen flex flex-col py-4">
+      <ToastContainer />
       <Header
         emailValue={getUserInfo().email}
         refreshTime={timeToRefresh}
