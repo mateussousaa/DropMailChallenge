@@ -101,11 +101,6 @@ Para facilitar o deploy e colaboração com a equipe de DevOps, o projeto foi co
 ## Implantação
 ---
 
-O projeto foi implantado na plataforma Vercel e está disponível em https://drop-mail-challenge-six.vercel.app/.
-
-<br>
-
-
 [![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)](https://drop-mail-challenge-six.vercel.app/)
 
 <br>
