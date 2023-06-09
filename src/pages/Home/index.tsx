@@ -82,7 +82,13 @@ function Home() {
     }
   }, [timeToRefresh]);
 
-  if (error) return <h1>{error.message}</h1>;
+  if (error) {
+    return (
+      <h1 className="text-2xl text-black bg-slate-100 rounded p-4 shadow">
+        {`error: ${error.message}`}
+      </h1>
+    );
+  }
 
   if (!sessionMails) return <Spinner />;
 
