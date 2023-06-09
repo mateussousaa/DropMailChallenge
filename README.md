@@ -1,4 +1,4 @@
-# Desafio DropMail.me - Projeto Front-end
+# Desafio DropMail.me
 
 ![Desafio DropMail.me](./public/dropmailPrint.png)
 
