@@ -10,6 +10,7 @@ module.exports = {
   parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
   plugins: ['react', 'react-refresh', 'import', '@typescript-eslint', 'react-hooks', 'jsx-a11y'],
   rules: {
+    'no-new': 'off',
     'react/jsx-filename-extension': [
       'error',
       {

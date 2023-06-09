@@ -18,7 +18,7 @@ const createNotification = () => {
   Notification.requestPermission().then((permission) => {
     createToast();
     if (permission === 'granted' && document.visibilityState !== 'visible') {
-      const notification = new Notification('New email arrived!', {
+      new Notification('New email arrived!', {
         body: 'New email arrived!',
         icon: mailIcon,
       });
