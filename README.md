@@ -1,4 +1,4 @@
-# Desafio DropMail.me
+# DropMail.me Challenge
 
 ![Desafio DropMail.me](./public/dropmailPrint.png)
 
