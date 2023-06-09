@@ -120,3 +120,7 @@ Para garantir a qualidade e confiabilidade do código, foram implementados teste
 Para executar os testes, utilize os seguintes comandos:
 
 - Executar testes unitários: `npm run test`
+
+<br>
+
+>  This is a challenge by [Coodesh](https://coodesh.com/)
