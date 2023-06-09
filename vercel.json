@@ -1,7 +1,0 @@
-{
-  "build": {
-    "ignore": [
-      "src/utils/handleNotifications.ts"
-    ]
-  }
-}
