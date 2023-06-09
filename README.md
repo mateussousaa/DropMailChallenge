@@ -27,7 +27,9 @@ Após receber o desafio, foi realizada uma leitura minuciosa dos requisitos e ca
 Como o desafio propôs a utilização de tecnologias como GraphQL, Apollo Client e Tailwind CSS, foi necessário dedicar um tempo ao aprendizado dessas tecnologias. Foram estudados tutoriais, documentações e exemplos de código para adquirir o conhecimento necessário para implementá-las adequadamente no projeto.
 
 - Criação do MVP:
-Inicialmente, foi criado um MVP (Minimum Viable Product) sem a execução das requisições necessárias para consumir a API. Nessa fase, foram desenvolvidos os componentes básicos da aplicação, como a interface de usuário, a estrutura de arquivos e a configuração inicial do projeto.
+Inicialmente,---
+92
+ foi criado um MVP (Minimum Viable Product) sem a execução das requisições necessárias para consumir a API. Nessa fase, foram desenvolvidos os componentes básicos da aplicação, como a interface de usuário, a estrutura de arquivos e a configuração inicial do projeto.
 
 - Consumo de API e Compreensão dos Requisitos:
 Após a criação do MVP, foi realizado o consumo da API do DropMail para atender aos requisitos propostos. Foi necessário compreender a estrutura das requisições.
@@ -75,7 +77,9 @@ Lembre-se de que o acesso temporário é concedido por um período limitado e es
 ## Como Começar
 ---
 
-Para executar o projeto localmente, siga estas etapas:
+## Para executar o projeto localmente, siga estas etapas:
+
+#### [Ativação do CORS Anywhere](https://github.com/mateussousaa/DropMailChallenge#ativa%C3%A7%C3%A3o-do-cors-anywhere)
 
 1. Clone o repositório: `git clone https://github.com/mateussousaa/DropMailChallenge.git`
 2. Navegue até o diretório do projeto: `cd DropMailChallenge`
@@ -85,10 +89,11 @@ Para executar o projeto localmente, siga estas etapas:
 
 <br>
 
-## Configuração do Docker Compose
----
+## Para executar o projeto pelo Docker Compose, siga estas etapas:
 
 Para facilitar o deploy e colaboração com a equipe de DevOps, o projeto foi configurado para funcionar com Docker Compose. Siga estas etapas para executar o projeto usando o Docker Compose:
+
+#### [Ativação do CORS Anywhere](https://github.com/mateussousaa/DropMailChallenge#ativa%C3%A7%C3%A3o-do-cors-anywhere)
 
 1. Certifique-se de ter o Docker Compose instalado em sua máquina.
 2. Clone o repositório: `git clone https://github.com/mateussousaa/DropMailChallenge.git`
