@@ -27,9 +27,7 @@ Após receber o desafio, foi realizada uma leitura minuciosa dos requisitos e ca
 Como o desafio propôs a utilização de tecnologias como GraphQL, Apollo Client e Tailwind CSS, foi necessário dedicar um tempo ao aprendizado dessas tecnologias. Foram estudados tutoriais, documentações e exemplos de código para adquirir o conhecimento necessário para implementá-las adequadamente no projeto.
 
 - Criação do MVP:
-Inicialmente,---
-92
- foi criado um MVP (Minimum Viable Product) sem a execução das requisições necessárias para consumir a API. Nessa fase, foram desenvolvidos os componentes básicos da aplicação, como a interface de usuário, a estrutura de arquivos e a configuração inicial do projeto.
+Inicialmente, foi criado um MVP (Minimum Viable Product) sem a execução das requisições necessárias para consumir a API. Nessa fase, foram desenvolvidos os componentes básicos da aplicação, como a interface de usuário, a estrutura de arquivos e a configuração inicial do projeto.
 
 - Consumo de API e Compreensão dos Requisitos:
 Após a criação do MVP, foi realizado o consumo da API do DropMail para atender aos requisitos propostos. Foi necessário compreender a estrutura das requisições.
